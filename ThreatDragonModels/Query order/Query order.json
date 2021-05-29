@@ -341,6 +341,11 @@
           "height": 2156.6611328125,
           "width": 790
         }
+      },
+      {
+        "title": "Query",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 1
       }
     ]
   }
