@@ -19,30 +19,591 @@
                 "height": 80
               },
               "position": {
-                "x": 50,
-                "y": 50
+                "x": 358,
+                "y": 12
               },
               "angle": 0,
               "id": "538bd14f-2fb7-4c2d-8649-8130f3ca43d6",
               "z": 1,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "ruleId": "b2a6d40d-d3f8-4750-8e4d-c02cc84b13dc",
+                  "title": "Generic spoofing threat",
+                  "type": "Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "A generic spoofing threat"
+                },
+                {
+                  "ruleId": "87bc37e2-798e-4d68-bb96-feb1da26da48",
+                  "title": "Generic repudiation threat",
+                  "type": "Repudiation",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "description": "A generic repudiation threat",
+                  "mitigation": "1. 对所有的写操作记录审计日志"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "普通用户"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 404,
+                "y": 213
+              },
+              "angle": 0,
+              "id": "434ad326-a25f-48e4-9a43-d0b0afba012c",
+              "z": 2,
               "hasOpenThreats": false,
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "actor 0"
+                  "text": "公有云IAM"
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
                 }
               }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "538bd14f-2fb7-4c2d-8649-8130f3ca43d6"
+              },
+              "target": {
+                "id": "434ad326-a25f-48e4-9a43-d0b0afba012c"
+              },
+              "vertices": [
+                {
+                  "x": 458,
+                  "y": 140
+                }
+              ],
+              "id": "809f7594-7726-46b9-a127-4f80a04bb600",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "邀请码",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 3,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 849,
+                "y": 435
+              },
+              "angle": 0,
+              "id": "a82dcb76-ab26-4540-ae20-fddb89f02e97",
+              "z": 4,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "应用数据库"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 507,
+                "y": 439
+              },
+              "angle": 0,
+              "id": "926ea559-093e-4a86-b271-aabd3d52afe5",
+              "z": 5,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "租户数据库"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "434ad326-a25f-48e4-9a43-d0b0afba012c"
+              },
+              "target": {
+                "id": "926ea559-093e-4a86-b271-aabd3d52afe5"
+              },
+              "vertices": [
+                {
+                  "x": 491,
+                  "y": 358
+                }
+              ],
+              "id": "984eb40e-01bb-49a5-8d97-dd3eee54a799",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.47082477044966975,
+                    "offset": -2.5538172105152652
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "邀请码",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 6,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "926ea559-093e-4a86-b271-aabd3d52afe5"
+              },
+              "target": {
+                "id": "434ad326-a25f-48e4-9a43-d0b0afba012c"
+              },
+              "vertices": [
+                {
+                  "x": 408,
+                  "y": 397
+                }
+              ],
+              "id": "85d49571-9396-4715-b79a-e3108baa8fdd",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.605644304582401,
+                    "offset": 9.355953513236711
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "租户信息",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 7,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "434ad326-a25f-48e4-9a43-d0b0afba012c"
+              },
+              "target": {
+                "id": "538bd14f-2fb7-4c2d-8649-8130f3ca43d6"
+              },
+              "vertices": [
+                {
+                  "x": 377,
+                  "y": 138
+                }
+              ],
+              "id": "f9907755-5b31-46f1-924f-ea85af83e6b9",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "租户信息",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 8,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 783,
+                "y": 217
+              },
+              "angle": 0,
+              "id": "e9179837-907e-44bf-9b83-72fdad512626",
+              "z": 9,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "私有云APP应用"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "538bd14f-2fb7-4c2d-8649-8130f3ca43d6"
+              },
+              "target": {
+                "id": "434ad326-a25f-48e4-9a43-d0b0afba012c"
+              },
+              "vertices": [
+                {
+                  "x": 531,
+                  "y": 142
+                }
+              ],
+              "id": "15c601e0-2ae9-4219-9206-62775be32ce9",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.5488338069513674,
+                    "offset": -4.609792382087872
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "加入租户请求",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 11,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "434ad326-a25f-48e4-9a43-d0b0afba012c"
+              },
+              "target": {
+                "id": "926ea559-093e-4a86-b271-aabd3d52afe5"
+              },
+              "vertices": [
+                {
+                  "x": 604,
+                  "y": 319
+                }
+              ],
+              "id": "0d0dd9ff-507a-4e03-be31-b66860285135",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "加入租户信息",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 12,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 802,
+                "y": 1
+              },
+              "angle": 0,
+              "id": "102b84df-15bd-4900-a8d0-c4f8f114d841",
+              "z": 13,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "消息队列"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "434ad326-a25f-48e4-9a43-d0b0afba012c"
+              },
+              "target": {
+                "id": "102b84df-15bd-4900-a8d0-c4f8f114d841"
+              },
+              "vertices": [
+                {
+                  "x": 664,
+                  "y": 189
+                }
+              ],
+              "id": "48c505b3-c8b4-4b8b-b25f-ec4f8bfb6e67",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.4847126446597585,
+                    "offset": 18.49439757911925
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "用户加入租户信息",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 14,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "102b84df-15bd-4900-a8d0-c4f8f114d841"
+              },
+              "target": {
+                "id": "e9179837-907e-44bf-9b83-72fdad512626"
+              },
+              "vertices": [
+                {
+                  "x": 898,
+                  "y": 152
+                }
+              ],
+              "id": "8834fc9f-8b2f-47ae-8e78-cfbddb14f999",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "用户加入租户信息",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 15,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "e9179837-907e-44bf-9b83-72fdad512626"
+              },
+              "target": {
+                "x": 927,
+                "y": 431
+              },
+              "vertices": [],
+              "id": "d39287e9-063f-4c19-a1a9-3894a307744b",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "用户加入租户信息",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 16,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 346,
+                "y": 196
+              },
+              "target": {
+                "x": 552,
+                "y": 107
+              },
+              "vertices": [],
+              "id": "184f73ea-4b7e-4838-b7de-2660ce537b96",
+              "z": 17,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 693,
+                "y": 111
+              },
+              "target": {
+                "x": 778,
+                "y": 184
+              },
+              "vertices": [],
+              "id": "f89f71b1-df30-4572-9275-0c5a23bbe210",
+              "z": 18,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 818,
+                "y": 145
+              },
+              "target": {
+                "x": 980,
+                "y": 172
+              },
+              "vertices": [
+                {
+                  "x": 895,
+                  "y": 187
+                }
+              ],
+              "id": "082d6eff-f2c2-428c-ac7e-41c2025c8183",
+              "z": 19,
+              "attrs": {}
             }
           ]
         },
         "size": {
           "height": 590,
-          "width": 790
+          "width": 3356
         }
       }
     ]
