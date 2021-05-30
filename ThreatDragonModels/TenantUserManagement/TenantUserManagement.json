@@ -644,7 +644,7 @@
               },
               "position": {
                 "x": 368,
-                "y": 234
+                "y": 235
               },
               "angle": 0,
               "id": "5c424d7a-81a5-4e36-88a7-bc1abda42050",
@@ -961,6 +961,69 @@
                   "class": "connection hasNoOpenThreats isInScope"
                 }
               }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 397,
+                "y": 174
+              },
+              "target": {
+                "x": 212,
+                "y": 212
+              },
+              "vertices": [
+                {
+                  "x": 285,
+                  "y": 166
+                }
+              ],
+              "id": "f5e749ea-510c-4559-873e-bc8a07cbd6fd",
+              "z": 13,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 566,
+                "y": 234
+              },
+              "target": {
+                "x": 437,
+                "y": 150
+              },
+              "vertices": [
+                {
+                  "x": 492,
+                  "y": 225
+                }
+              ],
+              "id": "8bff58b0-5cbc-4189-9e10-5cc42a6545b1",
+              "z": 14,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 561,
+                "y": 200
+              },
+              "target": {
+                "x": 743,
+                "y": 186
+              },
+              "vertices": [
+                {
+                  "x": 652,
+                  "y": 215
+                }
+              ],
+              "id": "f5f21ec4-7551-4919-b80d-1c9218d1a7e5",
+              "z": 15,
+              "attrs": {}
             }
           ]
         },
