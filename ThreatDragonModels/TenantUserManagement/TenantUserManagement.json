@@ -7,7 +7,7 @@
     "contributors": [],
     "diagrams": [
       {
-        "title": "邀请用户加入租户",
+        "title": "通过邀请码加入租户",
         "thumbnail": "./public/content/images/thumbnail.jpg",
         "id": 0,
         "diagramJson": {
