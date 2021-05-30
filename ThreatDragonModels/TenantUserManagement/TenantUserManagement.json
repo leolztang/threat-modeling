@@ -1,0 +1,16 @@
+{
+  "summary": {
+    "title": "TenantUserManagement",
+    "description": "租户用户管理"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "JoinTenant",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ]
+  }
+}
